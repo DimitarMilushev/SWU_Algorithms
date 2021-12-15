@@ -1,7 +1,8 @@
 namespace Algorithms
 {
     /**
-    An algorithm that takes an array of integers, separates them by value (positive/negative) and prints out results
+    * An algorithm that takes an array of integers, 
+    * separates them by value (positive/negative) and prints out results
     */
     public class PositiveNegative_Algo : Exercise
     {
@@ -9,12 +10,12 @@ namespace Algorithms
         {
             List<string> input = null;
             this.getInputString(ref input);
-            List<int> inputList = new List<int> { };
-            this.translateInputToIntegers(ref input, ref inputList);
-            if (inputList.Count < 1)
+            if (input.Count < 1)
             {
                 return;
             }
+            List<int> inputList = new List<int> { };
+            this.translateInputToIntegers(ref input, ref inputList);
 
             List<int> positiveArray = new List<int> { };
             List<int> negativeArray = new List<int> { };
