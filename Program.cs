@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.IO;
+using Exercises;
 
 namespace Algorithms // Note: actual namespace depends on the project name.
 {
@@ -9,7 +10,8 @@ namespace Algorithms // Note: actual namespace depends on the project name.
     {
         public static void Main(string[] args)
         {
-            Exercise positiveNegative = new PositiveNegative_Algo();
+            IExercise positiveNegative = new PositiveNegative();
+            positiveNegative.init();
             positiveNegative.calculate(); 
         }
     }
